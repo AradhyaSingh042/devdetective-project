@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/android-chrome-192x192.png"
+      type="image/x-icon"
+    />
+    <title>Dev Detective</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- top level container  -->
+    <div class="wrapper">
+      <div class="title-container">
+        <!-- App Name  -->
+        <h2>DevDetective</h2>
+        <!-- theme container  -->
+        <div class="theme-container">
+          <p class="theme-name">Dark</p>
+          <img
+            src="assets/images/moon-icon.svg"
+            class="theme-icon"
+            width="20px"
+            height="20px"
+          />
+        </div>
+      </div>
+
+      <!-- form container  -->
+      <form class="form-container">
+        <!-- error msg -->
+        <span data-errorMsg>no search results</span>
+        <!-- search icon  -->
+        <img
+          src="assets/images/search-icon.svg"
+          loading="lazy"
+          class="search-icon"
+        />
+        <!-- input field  -->
+        <input
+          type="text"
+          placeholder="Enter a Github username..."
+          class="user-input"
+        />
+        <!-- search button  -->
+        <button class="search-btn">Search</button>
+      </form>
+
+      <!-- user info container  -->
+      <div class="user-info-container">
+        <!-- left side  -->
+        <div class="left-container">
+          <img
+            src="https://avatars.githubusercontent.com/u/64855541?v=4"
+            class="avatar"
+          />
+        </div>
+
+        <!-- right side  -->
+        <div class="right-container">
+          <!-- name and join date  -->
+          <div class="name-container">
+            <h2 data-fullName></h2>
+            <p data-joinDate class="join-date"></p>
+          </div>
+
+          <!-- github link  -->
+          <a href="#" class="github-link" target="_blank"></a>
+
+          <!-- user bio  -->
+          <p class="bio"></p>
+
+          <!-- repos and followers  -->
+          <div class="follow-container">
+            <!-- repo  -->
+            <div class="repo-box">
+              <p>Repos</p>
+              <p data-repoCount></p>
+            </div>
+
+            <!-- followers  -->
+            <div class="follower-box">
+              <p>Followers</p>
+              <p data-followerCount></p>
+            </div>
+
+            <!-- following  -->
+            <div class="following-box">
+              <p>Following</p>
+              <p data-followingCount></p>
+            </div>
+          </div>
+
+          <!-- social media links 1  -->
+          <div class="social-container1">
+            <!-- user location  -->
+            <div class="location-container">
+              <img src="assets/images/location-icon.svg" data-locationIcon/>
+              <p data-cityName></p>
+            </div>
+
+            <!-- blog   -->
+            <div class="blog-container">
+              <img src="assets/images/website-icon.svg" data-blogIcon />
+              <a href="#" class="blog-link" target="_blank"></a>
+            </div>
+          </div>
+
+          <!-- social media links 2  -->
+          <div class="social-container2">
+            <!-- twitter  -->
+            <div class="twitter-container">
+              <img src="assets/images/twitter-icon.svg" data-twitterIcon />
+              <a href="#" class="twitter-link" target="_blank"></a>
+            </div>
+
+            <!-- company  -->
+            <div class="company-container">
+              <img src="assets/images/company-icon.svg" data-companyIcon />
+              <p class="company-link"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

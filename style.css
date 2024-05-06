@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #f6f8ff;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  text-align: center;
+}
+
+.title-container {
+  width: 90%;
+  max-width: 720px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 2.2rem;
+}
+
+.title-container.dark h2 {
+  color: #f6f8ff;
+}
+
+.title-container h2 {
+  color: #4b6a9b;
+  font-size: 26px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.theme-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.7rem;
+  cursor: pointer;
+}
+
+.theme-container.dark .theme-name {
+  color: #f6f8ff;
+}
+
+.theme-name {
+  color: #4b6a9b;
+  font-size: 13px;
+  line-height: normal;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.theme-icon {
+  margin-top: -2px;
+}
+
+.form-container {
+  max-width: 720px;
+  width: 720px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  padding: 0.6rem 1.5rem;
+  border-radius: 1.2rem;
+  position: relative;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.user-input {
+  width: 380px;
+  border: none;
+  padding: 0.5rem;
+  margin-left: 2rem;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4b6a9b;
+}
+
+.user-input::placeholder {
+  all: unset;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4b6a9b;
+}
+
+.user-input:focus {
+  border: none;
+  outline: none;
+}
+
+.user-input.dark,
+.user-input.dark::placeholder {
+  background-color: #1e2a47;
+  color: #f6f8ff;
+}
+
+.search-btn {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: normal;
+  background-color: #0079ff;
+  padding: 0.9rem 1.8rem;
+  color: white;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.user-info-container {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  max-width: 720px;
+  width: 720px;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 160px);
+  align-items: start;
+}
+
+.name-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.name-container h2 {
+  font-size: 26px;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: 600;
+}
+
+.name-container p {
+  font-size: 15px;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4b6a9b;
+}
+
+.github-link {
+  color: #0079ff;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-top: 0.2rem;
+}
+
+.bio {
+  margin-top: 1rem;
+  color: #8297b9;
+  font-size: 15px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: start;
+  margin-bottom: 1rem;
+}
+
+.follow-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+  background-color: #f6f8ff;
+  padding: 1.5rem 0px;
+  border-radius: 0.6rem;
+  margin-bottom: 3rem;
+}
+
+.follow-container.dark {
+  background-color: #141d2f;
+}
+
+.follow-container.dark p:first-of-type {
+  color: #f6f8ff;
+}
+
+.follow-container.dark p:last-of-type {
+  color: #f6f8ff;
+}
+
+.repo-box,
+.follower-box,
+.following-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.repo-box p:first-of-type,
+.follower-box p:first-of-type,
+.following-box p:first-of-type {
+  color: #4b6a9b;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.repo-box p:last-of-type,
+.follower-box p:last-of-type,
+.following-box p:last-of-type {
+  color: #2b3442;
+  font-size: 22px;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: 700;
+}
+
+.social-container1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  margin-bottom: 1.5rem;
+}
+
+.social-container1.dark p {
+  color: #f6f8ff;
+}
+
+.social-container1.dark a {
+  color: #f6f8ff;
+}
+
+.social-container2.dark p {
+  color: #f6f8ff;
+}
+
+.social-container2.dark a {
+  color: #f6f8ff;
+}
+
+.social-container2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.location-container,
+.blog-container,
+.twitter-container,
+.company-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+[data-locationIcon].dark {
+  filter: brightness(5);
+}
+
+[data-blogIcon].dark {
+  filter: brightness(5);
+}
+
+[data-twitterIcon].dark {
+  filter: brightness(5);
+}
+
+[data-companyIcon].dark {
+  filter: brightness(5);
+}
+
+.location-container {
+  text-transform: capitalize;
+}
+
+.blog-container {
+  max-width: 50%;
+}
+
+.location-container p,
+.company-container p {
+  color: #4b6a9b;
+  font-size: 15px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.blog-container a,
+.twitter-container a {
+  color: #4b6a9b;
+  font-size: 15px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.avatar {
+  width: 115px;
+  height: 115px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50%;
+}
+
+/* Dark Mode */
+
+.wrapper.dark {
+  color: #f6f8ff;
+  background-color: #141d2f;
+}
+
+.form-container.dark {
+  background-color: #1e2a47;
+}
+
+.user-info-container.dark {
+  background-color: #1e2a47;
+}
+
+.bio.dark {
+  color: #bdc0c9;
+}
+
+.join-date.dark {
+  color: #f6f8ff;
+}
+
+/* Error Msg */
+[data-errorMsg] {
+  position: absolute;
+  color: #ff0000;
+  right: 24%;
+  font-weight: 600;
+  display: none;
+}
+
+[data-errorMsg].active {
+  display: inline;
+}
