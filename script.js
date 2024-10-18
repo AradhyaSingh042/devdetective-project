@@ -32,7 +32,7 @@ const followContainer = document.querySelector(".follow-container");
 const socialContainer1 = document.querySelector(".social-container1");
 const socialContainer2 = document.querySelector(".social-container2");
 
-fetchUserData("thepranaygupta");
+fetchUserData("torvalds");
 let currentTheme = "light";
 
 searchBtn.addEventListener("click", (e) => {
